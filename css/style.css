@@ -2558,13 +2558,14 @@ a.active .fa-heart-o {
     opacity: 1;
 }
 
-.carousel-control.left {
+
+/* .carousel-control.left {
     left: -40px;
 }
 
 .carousel-control.right {
     right: -50px;
-}
+} */
 
 .carousel-control>a>span {
     color: white;
@@ -2676,7 +2677,7 @@ a.active .fa-heart-o {
         left: -25%;
     }
     .carousel-col {
-        width: 100%%;
+        width: 100%;
     }
     .active>div:first-child+div {
         display: block;
