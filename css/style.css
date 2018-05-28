@@ -338,6 +338,15 @@ textarea:focus {
     opacity: 1;
 }
 
+.btn {
+    padding: 0 5px;
+}
+
+.btn.active,
+.btn:active {
+    box-shadow: none;
+}
+
 
 /*------------------------------------*\
 	Logo
@@ -420,6 +429,10 @@ textarea:focus {
 
 .navbar .navbar-header .navbar-brand .logo-alt {
     display: none !important;
+}
+
+.main-nav li:last-child {
+    padding-right: 0;
 }
 
 
@@ -2362,4 +2375,114 @@ a.active .fa-heart-o {
 
 .modal-backdrop.in {
     opacity: .8;
+}
+
+
+/* Busca - Resultado */
+
+.busca-resultado {
+    color: #fff;
+    text-align: left;
+    height: auto;
+    padding: 30px 0;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+}
+
+.busca-filtro,
+.busca-filtro a {
+    color: #fff;
+    text-align: right;
+}
+
+.busca-filtro i {
+    color: #ff0047;
+    padding-right: 5px;
+}
+
+.busca-filtro .seta {
+    color: #fff;
+    padding: 0 0 0 5px;
+}
+
+.busca-filtro a:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.busca-qnt .numero {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 767px) {
+    .busca-resultado {
+        padding: 20px 0;
+    }
+    .busca-qnt {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .busca-filtro,
+    .busca-filtro a {
+        text-align: center;
+    }
+}
+
+
+/* Filtros */
+
+#filtros {
+    border-top: 1px solid #555e64;
+    margin: 25px 0 0 0;
+    padding: 25px 0 0 0;
+}
+
+.btn-filtro {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn-filtro:last-child {
+    margin-bottom: 0;
+}
+
+.btn-filtro:hover {
+    color: #fff;
+}
+
+.btn-verde {
+    background: #03cf88;
+}
+
+.btn-azul {
+    background: #55a8fd;
+}
+
+.btn-vermelho {
+    background: #ff0047;
+}
+
+.col-flex-btn {
+    padding-top: 22px;
+}
+
+#filtros label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#filtros .btn-default {
+    color: #aeb2b5;
+    background-color: transparent;
+    border-color: #aeb2b5;
+    padding: 8px 10px;
 }
