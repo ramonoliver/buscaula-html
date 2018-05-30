@@ -81,8 +81,12 @@
                     <ul class="main-nav nav navbar-nav navbar-right">
                         <li><a href="index.html">home</a></li>
                         <li><a href="#about">oferte seu curso</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#cadastro-modal">cadastrar</a></li>
-                        <li class="active"><a href="#" data-toggle="modal" data-target="#login-modal">entrar</a></li>
+                        <!-- <li><a href="#" data-toggle="modal" data-target="#cadastro-modal">cadastrar</a></li>
+                        <li class="active"><a href="#" data-toggle="modal" data-target="#login-modal">entrar</a></li> -->
+                        <li class="perfil-logado">
+                            <span>Leonardo</span>
+                            <a href="#" class="btn-sair">Sair</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /Main navigation -->
@@ -138,59 +142,62 @@
                     </form>
                 </div>
 
-                <div class="comments-perfil col-md-6 col-xs-12">
-                    <h3>Meus comentários</h3>
+                <div class="col-md-6 col-xs-12">
+                    <div class="comments-perfil">
+                        <h3>Meus comentários</h3>
 
-                    <div class="item-comentario">
-                        <div class="media">
-                            <div class="media-left">
-                                <img class="media-object" src="images/perso2.jpg" alt="">
+                        <div class="item-comentario">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="images/perso2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Joe Doe</h4>
+                                    <span class="time">2 min ago</span>
+                                    <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Joe Doe</h4>
-                                <span class="time">2 min ago</span>
-                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                        </div>
+                        <div class="item-comentario">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="images/perso2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Joe Doe</h4>
+                                    <span class="time">2 min ago</span>
+                                    <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-comentario">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="images/perso2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Joe Doe</h4>
+                                    <span class="time">2 min ago</span>
+                                    <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-comentario">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="images/perso2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Joe Doe</h4>
+                                    <span class="time">2 min ago</span>
+                                    <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item-comentario">
-                        <div class="media">
-                            <div class="media-left">
-                                <img class="media-object" src="images/perso2.jpg" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Joe Doe</h4>
-                                <span class="time">2 min ago</span>
-                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                            </div>
-                        </div>
+                    <div class="box-button">
+                        <a href="#" class="btn-cinza btn-full">Ver mais</a>
                     </div>
-                    <div class="item-comentario">
-                        <div class="media">
-                            <div class="media-left">
-                                <img class="media-object" src="images/perso2.jpg" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Joe Doe</h4>
-                                <span class="time">2 min ago</span>
-                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-comentario">
-                        <div class="media">
-                            <div class="media-left">
-                                <img class="media-object" src="images/perso2.jpg" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Joe Doe</h4>
-                                <span class="time">2 min ago</span>
-                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="#" class="btn-cinza btn-full">Ver mais</a>
                 </div>
             </div>
 
@@ -332,17 +339,19 @@
                         </div>
 
                         <!-- Controls -->
-                        <div class="left carousel-control">
-                            <a href="#carousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </div>
-                        <div class="right carousel-control">
-                            <a href="#carousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                        <div class="carousel-buttons">
+                            <div class="left carousel-control">
+                                <a href="#carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </div>
+                            <div class="right carousel-control">
+                                <a href="#carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -488,17 +497,19 @@
                         </div>
 
                         <!-- Controls -->
-                        <div class="left carousel-control">
-                            <a href="#carousel-visitados" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </div>
-                        <div class="right carousel-control">
-                            <a href="#carousel-visitados" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                        <div class="carousel-buttons">
+                            <div class="left carousel-control">
+                                <a href="#carousel-visitados" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </div>
+                            <div class="right carousel-control">
+                                <a href="#carousel-visitados" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 

@@ -441,6 +441,15 @@ textarea:focus {
     padding-right: 0;
 }
 
+.main-nav li:first-child {
+    padding-left: 0;
+}
+
+.menu-topo {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 /* -- default nav -- */
 
@@ -1538,6 +1547,10 @@ table thead {
     border-bottom: 0;
 }
 
+.comments-perfil .item-comentario {
+    padding: 5px 0 6px 0;
+}
+
 .comments {
     margin: 40px 0px;
 }
@@ -2553,19 +2566,31 @@ a.active .fa-heart-o {
 .carousel-control.left,
 .carousel-control.right {
     margin-right: 40px;
-    margin-left: 32px;
+    margin-left: 40px;
     background-image: none;
     opacity: 1;
+    /*Colocar depois dos sliders*/
+    position: relative;
 }
 
 
 /* .carousel-control.left {
     left: -40px;
-}
+} */
 
 .carousel-control.right {
-    right: -50px;
-} */
+    float: right;
+}
+
+.carousel-control.left a span,
+.carousel-control.right a span {
+    background: #ff0047;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px !important;
+    line-height: 28px;
+}
 
 .carousel-control>a>span {
     color: white;
@@ -2583,6 +2608,12 @@ a.active .fa-heart-o {
 
 .active>div:first-child {
     display: block;
+}
+
+.carousel-buttons {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
 }
 
 
@@ -2743,4 +2774,51 @@ a.active .fa-heart-o {
 
 .cursos-favoritos {
     margin: 40px 0;
+}
+
+.main-nav li.perfil-logado {
+    padding: 12px 15px;
+}
+
+.perfil-logado span {
+    display: inline-block;
+    color: #10161A;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.navbar-nav>li>a.btn-sair {
+    background: #ff0047;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    float: right;
+}
+
+.navbar-nav>li>a.btn-sair::after {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .form-perfil {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    .perfil-logado {
+        background: #37454d;
+        padding: 10px;
+    }
+    .perfil-logado span {
+        color: #fff;
+        padding: 0;
+        margin-right: 0;
+        font-weight: lighter;
+    }
+    .navbar-nav>li>a.btn-sair {
+        margin-right: 10px;
+    }
 }
