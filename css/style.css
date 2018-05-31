@@ -2178,7 +2178,7 @@ table thead {
     font-size: 13px;
     font-weight: lighter;
     color: #444;
-    padding: 0 0 20px 0;
+    padding: 0 0 5px 0;
     display: block;
 }
 
@@ -2781,4 +2781,19 @@ a.active .fa-heart-o {
     .navbar-nav>li>a.btn-sair {
         margin-right: 10px;
     }
+}
+
+
+/* Rating */
+
+.course-rating {
+    padding: 0 0 10px 0;
+}
+
+.fa-star {
+    color: #9e9c9d;
+}
+
+.checked {
+    color: #ffc349;
 }
