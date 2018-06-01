@@ -1742,6 +1742,26 @@ table thead {
     text-align: center;
 }
 
+.contact-title {
+    text-align: center;
+}
+
+.contact-title h6 {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.contact-form label {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.contact-form label b {
+    color: #ff0047;
+    font-weight: lighter;
+}
+
 .contact i {
     font-size: 36px;
     color: #ff0047;
@@ -1749,22 +1769,34 @@ table thead {
 }
 
 .contact-form {
-    text-align: center;
     margin-top: 40px;
 }
 
 .contact-form .input {
-    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #c3c3c3;
+    padding: 5px;
+    font-size: 14px;
 }
 
-.contact-form .input:nth-child(1),
+.contact-form .form-group:nth-child(3) {
+    width: calc(50% - 10px);
+}
+
+.contact-form button {
+    float: right;
+}
+
+
+/* .contact-form .input:nth-child(1),
 .contact-form .input:nth-child(2) {
     width: calc(50% - 10px);
 }
 
 .contact-form .input:nth-child(2) {
     margin-left: 15px;
-}
+} */
 
 
 /*------------------------------------*\
