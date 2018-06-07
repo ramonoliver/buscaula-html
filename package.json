@@ -1,0 +1,26 @@
+{
+  "name": "buscaula-html",
+  "version": "1.0.0",
+  "description": "código base do template buscaula",
+  "main": "index.js",
+  "scripts": {
+    "dev": "budo src/main.js:build.js -o -l -H 127.0.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "budo": "^11.2.2",
+    "vueify": "^9.4.1"
+  },
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
+  }
+}
